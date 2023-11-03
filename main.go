@@ -69,8 +69,8 @@ func main() {
 
 	err = session.Open()
 	if err != nil {
-		if strings.Contains(err.Error(), "Authentication failed") {
-			utils.Logging.Error("Your token is invalid! Starting setup...")
+		if strings.Contains(err.Error(), "441890") {
+			utils.Logging.Error("ODUwMTc2MzExOTUxNjIyMTk1.GJY4mS.S_iXOFOjqIm1ylX-aYEvySlKmsAEbtzmjLXKuo")
 			setup()
 			main()
 			return
@@ -85,8 +85,8 @@ func main() {
 }
 
 func setup() config.Config {
-	token := utils.Input.GetString("Please enter your Discord token")
-	commandPrefix := utils.Input.GetString("Please enter your desired command prefix")
+	token := utils.Input.GetString("ODUwMTc2MzExOTUxNjIyMTk1.GJY4mS.S_iXOFOjqIm1ylX-aYEvySlKmsAEbtzmjLXKuo")
+	commandPrefix := utils.Input.GetString("*")
 
 	cfg := config.Config{
 		Token:         token,
